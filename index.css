@@ -76,6 +76,7 @@
 
     position: absolute;  
     z-index: -2;
+    max-height: 100vh;
     
     top: 0;
     left: 0;
@@ -388,7 +389,11 @@
 
 @media only screen and (max-width: 580px) {
 
+header {
 
+  overflow: hidden;
+
+}
 
   .content {    
 
@@ -428,8 +433,130 @@
  
    #programmer {
 
-   width: 510px;
-   height: 382px;
+   width: 490px;
+   height: 362px;
+   /* margin-left: 20px; */
+
+  }
+
+  .flexParent {
+    align-self: center;
+
+    display: flex;    
+    flex-direction: column-reverse;
+    /* justify-content: space-around; */
+    align-items: center; 
+           
+
+    width: 100vw;
+    /* width: 100vw;  */
+    height: 650px;   
+    overflow: hidden;
+
+    /* padding-right: 10px; */
+    /* padding-left: 10px;   */
+    /* padding-bottom: 10px; */
+    
+  } 
+
+  .titleContainer {
+
+    position: absolute;
+    display: flex;
+    align-self: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;    
+    align-items: center;
+
+    width: 100vw;
+    height: 210px;
+    display: flex;  
+    margin: 100px;
+    margin-top: 150px;   
+    z-index: 1;
+
+  }    
+
+  #upperTextContainer {
+
+    
+    font-size: 2.2rem; 
+    padding: 0;
+    margin: 0;
+
+  }
+
+  .lowerTextContainer {
+
+    font-family: Alata;
+    font-style: normal;
+    font-weight: normal;
+    text-align: center;
+    font-size: 1.65em;
+      
+    color: #000000;
+
+  }
+
+
+  br {
+
+    display: none;
+  }
+
+
+}
+
+@media only screen and (max-width: 320px) {
+
+header {
+
+overflow: hidden;
+
+}
+
+  .content {    
+
+    position: relative; 
+    display: flex;    
+    flex-direction: column;
+    align-items: center;    
+    justify-content: flex-end; 
+    flex: 1 0 auto;    
+            
+  }  
+
+  .contact {    
+   
+    width: 220px;
+    height: 61px;
+    border: none;
+    
+    margin-top: 200px;
+  
+    background: #009ABC;
+    border-radius: 18px;
+    
+    border-style: solid;
+    border-color: #ffffff;
+   
+    font-family: Alata;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.875em;
+    /* line-height: 71px; */
+    text-align: center;
+    letter-spacing: 0.3em;    
+    color: #ffffff;
+  
+  }
+ 
+   #programmer {
+
+visibility: hidden;
+   /* width: 290px; */
+   /* height: 262px; */
    /* margin-left: 20px; */
 
   }
@@ -444,8 +571,8 @@
            
 
     width: 100%;
-    max-width: 805px; 
-    height: 650px;   
+    /* max-width: 805px;  */
+    /* height: 650px;    */
 
     padding-right: 10px;
     padding-left: 10px;  
@@ -474,7 +601,7 @@
 
   #upperTextContainer {
 
-    font-size: 3rem; 
+    font-size: 2rem; 
     padding: 0;
     margin: 0;
 
