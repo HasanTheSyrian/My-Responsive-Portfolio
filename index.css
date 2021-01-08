@@ -90,7 +90,7 @@
     position: absolute;
     z-index: -1;     
         
-  }
+  } 
 
   .flexParent {
 
@@ -100,6 +100,8 @@
 
     width: 100%;
     max-width: 1610px;    
+
+    bottom: 0;
 
     padding-right: 10px;
     padding-left: 10px;  
@@ -255,6 +257,13 @@
 
   }
 
+  #print,.print {
+
+
+    display: none;
+    visibility: hidden;
+  }
+
 
   /* SECOND PAGE */  /* SECOND PAGE */  /* SECOND PAGE */  /* SECOND PAGE */  
 
@@ -288,11 +297,20 @@
             
   }  
 
+  button {
+
+    max-width: 100%;
+    height: 100%;
+
+  }
+
   .contact {    
    
-    width: 250px;
-    height: 61px;
+    /* width: 250px; */
+    /* height: 61px; */
     border: none;
+
+    
     
     margin-bottom: 70px;
   
@@ -500,6 +518,7 @@ header {
     font-weight: normal;
     text-align: center;
     font-size: 1.65em;
+    margin-bottom: 100px;
       
     color: #000000;
 
@@ -631,3 +650,38 @@ overflow: hidden;
 
 }
 
+
+ @media print { /* EVERYTHING UNDER HERE ONLY RUNS WHEN THE USER IS PRINTING */
+
+  *:not(.print,#print) {    /* SELECTS EVERY SINGLE ELEMENT :not(.print,#print) EXECLUDES THE TWO DIVS THAT CONTAIN THE TEXT 'YOU FOUND ME' */
+   
+   visibility: hidden;
+
+  }
+
+
+  .print,#print {     /* .print AND #priont REAPPEAR LIKE THIS */
+
+   
+   display: block;       
+   visibility: visible;
+
+  } 
+
+  .print {  /* EVERYTHING HERE IS JUST STYLING */
+  
+  margin: 0 auto;
+ 
+  font-family: Alata;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 5rem;
+  /* line-height: 71px; */
+  text-align: center;
+  letter-spacing: 0.3em;    
+  color: #0039a3;  
+
+  }
+
+}
+ 
