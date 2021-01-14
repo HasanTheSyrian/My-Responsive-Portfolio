@@ -75,7 +75,7 @@
   .waveContainer {
 
     position: absolute;  
-    z-index: -2;
+    z-index: -1;
     max-height: 100vh;
     
     top: 0;
@@ -150,6 +150,7 @@
 
   #programmer {
 
+    
     max-width: 100%;
     height: auto;
 
@@ -217,10 +218,9 @@
     
   }
 
-
   .titleContainer {
 
-    position: absolute;
+    /* position: absolute; */
     display: flex;
     flex-direction: column;
     max-width: 900px;
@@ -231,15 +231,22 @@
     z-index: 1;
 
   }   
+
+  /* #text1, #text2, #text3 {
+
+   position: absolute;
+
+  } */
   
   
-  .lowerTextContainer, #upperTextContainer { 
-  
+  .lowerTextContainer, .upperTextContainer { 
+
+    /* position: absolute; */
     justify-content: flex-end;   
 
   }   
 
-  #upperTextContainer {
+  .upperTextContainer {
 
     font-size: 3.875rem; 
     padding: 0;
@@ -361,7 +368,7 @@
 
   .titleContainer {
 
-    position: absolute;
+    /* position: absolute; */
     display: flex;
     align-self: center;
     flex-direction: row;
@@ -379,14 +386,14 @@
   }   
   
   
-  /* .lowerTextContainer, #upperTextContainer { 
+  /* .lowerTextContainer, .upperTextContainer { 
   
     justify-content: center;   
     align-items: center;
 
   }    */
 
-  #upperTextContainer {
+  .upperTextContainer {
 
     font-size: 3.875rem; 
     padding: 0;
@@ -503,7 +510,7 @@ header {
 
   }    
 
-  #upperTextContainer {
+  .upperTextContainer {
     
     font-size: 2.2rem; 
     padding: 0;
@@ -626,7 +633,7 @@ margin-top: auto;
 
   }    
 
-  #upperTextContainer {
+  .upperTextContainer {
 
     font-size: 2rem; 
     padding: 0;
