@@ -125,8 +125,7 @@
     font-family: Alata;
     font-style: normal;
     font-weight: normal;
-    font-size: 30px;
-    /* line-height: 71px; */
+    font-size: 30px;   
     text-align: center;
     letter-spacing: 0.3em;    
     color: #ffffff;
@@ -136,9 +135,7 @@
   .contactContainer {
 
     z-index: 2;
-    max-height: 500px;   
-
-  /* background-color: yellow; */
+    max-height: 500px; 
 
   }
 
@@ -219,29 +216,20 @@
   }
 
   .titleContainer {
-
-    /* position: absolute; */
+    
     display: flex;
     flex-direction: column;
     max-width: 900px;
     height: 210px;
-    display: flex;  
-    margin: 100px;
-    margin-top: 150px;   
+    display: flex;    
+    margin-left: 100px;
+    margin-top: 10vh;   
     z-index: 1;
 
   }   
-
-  /* #text1, #text2, #text3 {
-
-   position: absolute;
-
-  } */
-  
   
   .lowerTextContainer, .upperTextContainer { 
-
-    /* position: absolute; */
+    
     justify-content: flex-end;   
 
   }   
@@ -294,14 +282,13 @@
 @media only screen and (max-width: 900px) {
 
 
-  .content {    
-
-    position: relative; 
+  .content {  
+    
     display: flex;    
     flex-direction: column;
-    align-items: center;    
+    align-items: space-betweem;    
     justify-content: flex-end; 
-    flex: 1 0 auto;
+    flex: 1 0 auto;   
             
   }  
 
@@ -312,27 +299,17 @@
 
   }
 
-  .contact {    
-   
-    /* width: 250px; */
-    /* height: 61px; */
-    border: none;
+  .contact {       
 
-    
-    
-    margin-bottom: 70px;
-  
+    border: none;  
     background: #009ABC;
-    border-radius: 18px;
-    
+    border-radius: 18px;    
     border-style: solid;
-    border-color: #ffffff;
-   
+    border-color: #ffffff;   
     font-family: Alata;
     font-style: normal;
     font-weight: normal;
-    font-size: 1.875em;
-    /* line-height: 71px; */
+    font-size: 1.875em;    
     text-align: center;
     letter-spacing: 0.3em;    
     color: #ffffff;
@@ -340,7 +317,6 @@
   }
  
    #programmer {
-
 
     max-width: 100%;
     height: auto;
@@ -353,45 +329,32 @@
     flex-direction: column-reverse;
     justify-content: space-between;
     align-items: center;      
-    width: 530px;
-    height: auto;
-
-    width: 100%;
-    /* max-width: 1610px;  */
-    /* height: 650px;    */
-
+    width: 530px;    
+    height: 100%;
+    width: 100%;    
     padding-right: 10px;
     padding-left: 10px;  
-    padding-bottom: 10px;
-    
+    padding-bottom: 10px;    
+    flex: 1;
+
   } 
 
   .titleContainer {
-
-    /* position: absolute; */
+    
     display: flex;
     align-self: center;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;    
     align-items: center;
-
     width: auto;
     height: 210px;
     display: flex;  
-    margin: 100px;
-    margin-top: 150px;   
+    margin-left: 0px;
+    margin-bottom: 40px;
     z-index: 1;
 
-  }   
-  
-  
-  /* .lowerTextContainer, .upperTextContainer { 
-  
-    justify-content: center;   
-    align-items: center;
-
-  }    */
+  }     
 
   .upperTextContainer {
 
@@ -425,49 +388,42 @@
 
 @media only screen and (max-width: 580px) {
 
-header {
-
-  overflow: hidden;
-
-}
-
   .content {    
 
-    position: relative; 
     display: flex;    
     flex-direction: column;
-    align-items: center;    
+    align-items: space-betweem;    
     justify-content: flex-end; 
-    flex: 1 0 auto;    
+    flex: 1 0 auto;   
             
   }  
 
-  .contact {    
-   
-    width: 250px;
-    height: 61px;
-    border: none;
-    
-    margin-top: auto;
+  button {
+
+    max-width: 100%;
+    height: 100%;
   
-    background: #009ABC;
-    border-radius: 18px;
-    
-    border-style: solid;
-    border-color: #ffffff;
+  }
+
+  .contact {  
+
    
-    font-family: Alata;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 1.875em;
-  
-    text-align: center;
-    letter-spacing: 0.3em;    
-    color: #ffffff;
+  border: none;  
+  background: #009ABC;
+  border-radius: 18px;  
+  border-style: solid;
+  border-color: #ffffff; 
+  font-family: Alata;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.875em;    
+  text-align: center;
+  letter-spacing: 0.3em;    
+  color: #ffffff;
   
   }
  
-   #programmer {
+  #programmer {
 
     max-width: 100%;
     height: auto;
@@ -475,44 +431,42 @@ header {
   }
 
   .flexParent {
-    align-self: center;
 
-    display: flex;    
-    flex-direction: column-reverse;
-   
-    align-items: center; 
-           
-
-    width: 100vw;
-   
-    height: 650px;   
-    overflow: hidden;
+  display: flex;    
+  flex-direction: column-reverse;
+  justify-content: space-between;
+  align-items: center;      
+  width: 530px;    
+  height: 100%;
+  width: 100%;    
+  padding-right: 10px;
+  padding-left: 10px;  
+  padding-bottom: 10px;    
+  flex: 1;
 
     
   } 
 
   .titleContainer {
 
-    /* position: absolute; */
     display: flex;
-    align-self: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;    
-    align-items: center;
-
-    width: 100vw;
-    height: 210px;
-    display: flex;  
-    margin: 100px;
-    margin-top: 150px;   
-    z-index: 1;
+  align-self: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;    
+  align-items: center;
+  width: auto;
+  height: 210px;
+  display: flex;  
+  margin-left: 0px;
+  margin-bottom: 20px;
+  z-index: 1;
 
   }    
 
   .upperTextContainer {
     
-    font-size: 2.2rem; 
+    font-size: 3.2rem; 
     padding: 0;
     margin: 0;
 
@@ -524,10 +478,17 @@ header {
     font-style: normal;
     font-weight: normal;
     text-align: center;
-    font-size: 1.65em;
+    font-size: 1.75em;
     margin-bottom: 100px;
       
     color: #000000;
+
+  }
+
+  span {
+
+   -webkit-text-stroke-width: 1px;
+   -webkit-text-stroke-color: black;
 
   }
 
@@ -535,54 +496,40 @@ header {
   br {
 
     display: none;
-  }
-
-  .contactContainer {
-
-margin-top: auto;
-
-  }
+  }  
 
 }
 
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 320px) {  
 
-  header {
-
-   overflow: hidden;
-
-  }
-
-  .content {    
-
-    position: relative; 
+  .content {  
+  
     display: flex;    
     flex-direction: column;
-    align-items: center;    
+    align-items: space-betweem;    
     justify-content: flex-end; 
-    flex: 1 0 auto;    
+    flex: 1 0 auto;   
             
-  }  
+  } 
+
+  button {
+
+    max-width: 100%;
+    height: 100%;
+  
+  }
 
   .contact {    
    
-    width: 220px;
-    height: 61px;
-    border: none;
-    
-    margin-top: 200px;
-  
+    border: none;  
     background: #009ABC;
-    border-radius: 18px;
-    
+    border-radius: 18px;  
     border-style: solid;
-    border-color: #ffffff;
-   
+    border-color: #ffffff; 
     font-family: Alata;
     font-style: normal;
     font-weight: normal;
-    font-size: 1.875em;
-    /* line-height: 71px; */
+    font-size: 1.875em;    
     text-align: center;
     letter-spacing: 0.3em;    
     color: #ffffff;
@@ -594,41 +541,37 @@ margin-top: auto;
     max-width: 100%;
     height: auto;
 
-
   }
 
   .flexParent {
-    align-self: center;
 
     display: flex;    
     flex-direction: column-reverse;
-
-    align-items: center; 
-           
-
-    width: 100%;
- 
+    justify-content: space-between;
+    align-items: center;      
+    width: 530px;    
+    height: 100%;
+    width: 100%;    
     padding-right: 10px;
     padding-left: 10px;  
-    padding-bottom: 10px;
+    padding-bottom: 10px;    
+    flex: 1;
     
   } 
 
   .titleContainer {
 
-    position: absolute;
     display: flex;
     align-self: center;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;    
     align-items: center;
-
-    width: auto;
+    width: 100%;
     height: 210px;
     display: flex;  
-    margin: 100px;
-    margin-top: 150px;   
+    margin-left: 0px;
+    margin-bottom: 40px;
     z-index: 1;
 
   }    
@@ -662,13 +605,6 @@ margin-top: auto;
 
 }
 
-
-
-
-
-
-
-
  @media print { /* EVERYTHING UNDER HERE ONLY RUNS WHEN THE USER IS PRINTING */
 
   *:not(.print,#print) {    /* SELECTS EVERY SINGLE ELEMENT :not(.print,#print) EXECLUDES THE TWO DIVS THAT CONTAIN THE TEXT 'YOU FOUND ME' */
@@ -693,8 +629,7 @@ margin-top: auto;
   font-family: Alata;
   font-style: normal;
   font-weight: normal;
-  font-size: 5rem;
-  /* line-height: 71px; */
+  font-size: 5rem;  
   text-align: center;
   letter-spacing: 0.3em;    
   color: #0039a3;  
