@@ -194,7 +194,7 @@ span::-moz-selection {
   height: 210px;  
   margin-left: 5vw;
   margin-top: 10vh;   
-  z-index: 1;
+  z-index: 2;
 
 }   
 
@@ -317,7 +317,7 @@ button {
   margin-top: 2vh;  
   margin-left: 0px;
   /* margin-bottom: 40px; */
-  z-index: 1;
+  z-index: 2;
 
 }     
 
@@ -422,7 +422,7 @@ height: auto;
 display: flex;  
 margin-left: 0px;
 /* margin-bottom: 20px; */
-z-index: 1;
+z-index: 2;
 
 
 
@@ -538,7 +538,7 @@ button {
   margin-left: 0px;
     
   /* margin-bottom: 40px; */
-  z-index: 1;
+  z-index: 2;
 
 }    
 
