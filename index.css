@@ -105,9 +105,9 @@ header {
   max-width: 85vw;            
   min-height: 100%;
 
-  padding-right: 10px;
+  /* padding-right: 10px;
   padding-left: 10px;  
-  padding-bottom: 10px;
+  padding-bottom: 10px; */
   z-index: 1;
   
 }
@@ -142,14 +142,15 @@ header {
 
 .programmer {
   
-  max-height: 500px;     
+  /* max-height: 500px;    */
+  height: 100%;  
 
 } 
 
 #programmer {  
  
   max-width: 100%; 
-  
+  height: 100%;  
 }
 
 button:hover {
@@ -191,7 +192,7 @@ span::-moz-selection {
   display: flex;
   flex-direction: column;
   max-width: 900px;
-  height: 210px;  
+  height: auto;  
   margin-left: 5vw;
   margin-top: 10vh;   
   z-index: 2;
@@ -203,6 +204,7 @@ span::-moz-selection {
   font-size: clamp(62px, 10vw, 100px); 
   padding: 0;
   margin: 0;
+  width: auto;
 
 }
 
@@ -212,6 +214,8 @@ span::-moz-selection {
   font-style: normal;
   font-weight: normal;
   font-size: clamp(31px, 1vw, 50px);
+  margin: 0;
+  width: auto;
     
   color: #000000;
 
@@ -293,9 +297,9 @@ button {
   flex-direction: column-reverse;
   justify-content: space-around;
   align-items: center;   
-  padding-right: 10px;
+  /* padding-right: 10px;
   padding-left: 10px;  
-  padding-bottom: 10px;    
+  padding-bottom: 10px;     */
   width: 530px;    
   height: 100%;
   width: 100%;         
@@ -337,6 +341,7 @@ button {
   font-weight: normal;
   text-align: center; 
   font-size: clamp(31px, 1vw, 50px);
+  height: auto;
     
   color: #000000;
 
@@ -401,9 +406,9 @@ align-items: center;
 width: 530px;    
 height: 100%;
 width: 100%;    
-padding-right: 10px;
+/* padding-right: 10px;
 padding-left: 10px;  
-padding-bottom: 10px;    
+padding-bottom: 10px;     */
 flex: 1;
 
   
@@ -512,14 +517,14 @@ button {
 
   display: flex;    
   flex-direction: column-reverse;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;      
   width: 530px;    
   height: 100%;
   width: 100%;    
-  padding-right: 10px;
+  /* padding-right: 10px;
   padding-left: 10px;  
-  padding-bottom: 10px;    
+  padding-bottom: 10px;     */
   flex: 1;
   
 } 
@@ -533,7 +538,7 @@ button {
   justify-content: center;    
   align-items: center;
   width: 100%;
-  height: 210px;
+  height: auto;
   display: flex;  
   margin-left: 0px;
     
