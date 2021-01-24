@@ -10,10 +10,9 @@ body {
   padding: 0;
   min-height: 100vh;
   max-height: 100vh;
-  overflow-y: hidden;
 }
 
-body {
+#firstPage {
   background-image: url(/Component\1\–\1svg);
   background-repeat: no-repeat;
   background-color: #e5e5e5;
@@ -129,6 +128,10 @@ header {
   overflow: hidden;
 }
 
+br::selection {
+  background: #00bae2;
+}
+
 button:hover {
   cursor: pointer;
   color: black;
@@ -198,10 +201,168 @@ span::-moz-selection {
 }
 
 /* SECOND PAGE */ /* SECOND PAGE */ /* SECOND PAGE */ /* SECOND PAGE */
+/* SECOND PAGE */ /* SECOND PAGE */ /* SECOND PAGE */ /* SECOND PAGE */
+/* SECOND PAGE */ /* SECOND PAGE */ /* SECOND PAGE */ /* SECOND PAGE */
+/* SECOND PAGE */ /* SECOND PAGE */ /* SECOND PAGE */ /* SECOND PAGE */
+/* SECOND PAGE */ /* SECOND PAGE */ /* SECOND PAGE */ /* SECOND PAGE */
+/* SECOND PAGE */ /* SECOND PAGE */ /* SECOND PAGE */ /* SECOND PAGE */
+/* SECOND PAGE */ /* SECOND PAGE */ /* SECOND PAGE */ /* SECOND PAGE */
 
-#waveTwo {
-  position: absolute;
-  z-index: -1;
+#secondPage {
+  /* prettier-ignore */
+  background: rgb(255, 239, 239);
+  background: radial-gradient(
+    circle,
+    rgba(255, 239, 239, 1) 0%,
+    rgba(208, 208, 208, 1) 100%
+  );
+}
+
+.headerContainer {
+  margin: 0 auto;
+}
+
+.pageHeader {
+  font-size: clamp(36px, 1vw, 66px);
+  font-family: Alef;
+  font-style: normal;
+  font-weight: normal;
+  text-align: center;
+  /* margin: 0 auto; */
+}
+
+.gridContainer {
+  margin: 0 auto;
+  height: 100%;
+  width: 1000px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(265px, 2fr));
+  grid-template-rows: repeat(auto-fill, minmax(265px, 2fr));
+  /* grid-template-columns: 265px 265px; */
+  /* grid-template-rows: 265px 265px 265px; */
+  gap: 2.5rem;
+  grid-template-areas:
+    "box1 box2 box3"
+    "box4 box5 box6";
+  /* align-self: center; */
+  justify-items: center;
+}
+
+.box {
+  width: 265px;
+  height: 376px;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 2px;
+
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+}
+
+.box:hover {
+  cursor: pointer;
+  color: white;
+  
+  
+  transition: 0.5s;
+}
+
+.projectImage {
+  margin-top: 20px;
+  min-width: 229px;
+  min-height: 308px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+
+  background: #000000;
+  border-radius: 2px;
+}
+
+.imageOne {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  /* opacity: 0.5; */
+}
+
+.questionMark {
+  color: white;
+  text-align: center;
+  font-size: 80px;
+}
+
+.projects {
+  font-size: 18px;
+  font-family: Alata;
+  font-style: normal;
+  font-weight: normal;
+  text-align: center;
+  letter-spacing: 0.3em;
+  height: auto;
+  width: auto;
+}
+
+#box1 {
+  /* prettier-ignore */
+  background: linear-gradient(153.52deg, #6C63FF -21.68%, rgba(255, 255, 255, 0) 100%), #009ACB;
+  grid-area: box1;
+}
+
+#box2 {
+  /* prettier-ignore */
+  background: linear-gradient(180deg, #6C63FF -20.74%, rgba(255, 255, 255, 0) 101.99%), #009ACB;
+  grid-area: box2;
+}
+
+#box3 {
+  /* prettier-ignore */
+  background: linear-gradient(206.21deg, #6C63FF -21.43%, rgba(255, 255, 255, 0) 100%), #009ACB;
+  grid-area: box3;
+}
+
+#box4 {
+  /* prettier-ignore */
+  background: linear-gradient(206.46deg, rgba(255, 255, 255, 0) 0%, #6C63FF 122.81%), #009ACB;
+  grid-area: box4;
+}
+
+#box5 {
+  /* prettier-ignore */
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #6C63FF 136.04%), #009ACB;
+  grid-area: box5;
+}
+
+#box6 {
+  /* prettier-ignore */
+  background: linear-gradient(153.38deg, rgba(255, 255, 255, 0) 0%, #6C63FF 124.2%), #009ACB;
+  grid-area: box6;
+}
+
+@media only screen and (max-width: 1000px) {
+  .gridContainer {
+    margin: 0 auto;
+    display: grid;
+    width: auto;
+
+    grid-template-columns: repeat(auto-fit, minmax(265px, 1fr));
+    grid-template-areas:
+      "box1"
+      "box2"
+      "box3"
+      "box4"
+      "box5"
+      "box6";
+
+    gap: 1rem;
+  }
+
+  #box6 {
+    margin-bottom: 20px;
+  }
 }
 
 /* MOBILE SUPPORT */ /* MOBILE SUPPORT */ /* MOBILE SUPPORT */
@@ -478,7 +639,6 @@ span::-moz-selection {
 }
 
 @media only screen and (max-height: 825px) and (min-width: 900px) {
-
   .titleContainer {
     display: flex;
     flex-direction: column;
