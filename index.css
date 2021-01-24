@@ -231,8 +231,16 @@ span::-moz-selection {
   /* margin: 0 auto; */
 }
 
+.mainContent {
+
+margin-bottom: 20px;
+
+}
+
 .gridContainer {
   margin: 0 auto;
+
+margin-bottom: 20px;
   height: 100%;
   width: 1000px;
   display: grid;
