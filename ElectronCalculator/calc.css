@@ -110,7 +110,7 @@ color:rgb(255, 255, 255);
 
   padding: none;
   margin: none;
-  font-size: clamp(40px, 1vw, 60px);
+  font-size: clamp(20px, 1vw, 30px);
   text-align: center;
   color: red;
 
@@ -141,7 +141,8 @@ font-size: 20px;
 
 margin: 0 auto;
 max-width: 216px;
-max-height: 216px;
+/* max-height: 216px; */
+height: 100%;
 display: flex;
 flex-wrap: wrap;
 flex-direction: row;

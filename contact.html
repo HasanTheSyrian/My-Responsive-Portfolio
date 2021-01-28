@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" id="thirdPageHTML">
+<head>
+    <head>    
+        <title>Contact</title>
+        <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">     <!-- Import Alata Font-->
+        <link href="https://fonts.googleapis.com/css2?family=Alef&display=swap" rel="stylesheet">      <!-- Import Alef Font -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">    
+        <link rel="stylesheet" href="index.css">
+        <link rel="icon" href="WebsiteLogoTwo.png">
+        <script src="index.js"></script>
+        <meta charset="UTF-8">
+        <meta name="main" content="index, follow">
+        <meta name="viewport" content="width=device-width, initital-scale=1">
+    </head>
+</head>
+<body id="thirdPage">
+    
+    <header class="contactHeader">
+
+        <div class="logoDiv" onclick="document.location.href='index.html'">
+        <img class="logo" src="Logo4k.png" alt="Logo">
+        </div>
+    
+      </header>
+
+      <div class="headerContainer">
+        <h1 class="pageHeader">CONTACT</h1>    
+      </div>
+
+       <div class="logoContainer">
+
+        
+        <img class="gitLogo" alt="githubLogo" src="githubLogo.png" onclick="location.href = 'https://github.com/HasanTheSyrianDev'"> 
+       
+
+       <img class="twitLogo" alt="twitterLogo" src="twitterLogo.png" onclick="location.href = 'https://twitter.com/hasanalaref999'">
+       </div>
+
+
+      <div id="formContainer">
+      <form class="formContainer" autocomplete="off" name="contact" method="POST" data-netlify="true">
+        <p class="formP">
+          <label><input class="name" id="form" placeholder="YOUR NAME" type="text" name="name"/></label>   
+        </p>
+        <p class="formP">
+          <label><input class="email" id="form" placeholder="E-MAIL" type="email" name="email"/></label>
+        </p>        
+        <p class="formP">
+          <label><textarea class="message" id="form" placeholder="MESSAGE" name="message"></textarea></label>
+        </p>
+        <p class="formP">
+          <button class="button" type="submit">SEND</button>
+        </p>
+      </form>
+      </div>
+
+</body>
+</html>

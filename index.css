@@ -37,6 +37,8 @@ header {
   background-image: url(4KGIF.gif);
   background-size: contain;
   background-repeat: no-repeat;
+  
+  cursor: pointer;
 }
 
 .logo {
@@ -232,15 +234,13 @@ span::-moz-selection {
 }
 
 .mainContent {
-
-margin-bottom: 20px;
-
+  margin-bottom: 20px;
 }
 
 .gridContainer {
   margin: 0 auto;
 
-margin-bottom: 20px;
+  margin-bottom: 20px;
   height: 100%;
   width: 1000px;
   display: grid;
@@ -273,8 +273,7 @@ margin-bottom: 20px;
 .box:hover {
   cursor: pointer;
   color: white;
-  
-  
+
   transition: 0.5s;
 }
 
@@ -350,6 +349,53 @@ margin-bottom: 20px;
   grid-area: box6;
 }
 
+#contactButton {
+  /* margin: 0 auto; */
+  max-height: 500px;
+  z-index: 2;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.contactButton {
+  
+  width: 300px;
+  height: 71px;
+  
+  margin-bottom: 20px;
+
+  border-radius: 18px;
+  border-style: solid;
+  /* border-color: black; */
+
+  font-family: Alata;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 45px;
+  letter-spacing: 0.1em;
+  text-align: center;
+
+  background: #009abc;
+  color: black;
+
+  /* background: rgba( 255, 255, 255, 0.35 ); */
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 8.0px );
+-webkit-backdrop-filter: blur( 8.0px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.contactButton:hover {
+  cursor: pointer;
+  color: white;
+  border-color: white;
+  background: #047f9b;
+  transition: 1s;
+}
+
 @media only screen and (max-width: 1000px) {
   .gridContainer {
     margin: 0 auto;
@@ -371,6 +417,260 @@ margin-bottom: 20px;
   #box6 {
     margin-bottom: 20px;
   }
+}
+
+/* THIRD PAGE */ /* THIRD PAGE */ /* THIRD PAGE */ /* THIRD PAGE */
+/* THIRD PAGE */ /* THIRD PAGE */ /* THIRD PAGE */ /* THIRD PAGE */
+/* THIRD PAGE */ /* THIRD PAGE */ /* THIRD PAGE */ /* THIRD PAGE */
+/* THIRD PAGE */ /* THIRD PAGE */ /* THIRD PAGE */ /* THIRD PAGE */
+/* THIRD PAGE */ /* THIRD PAGE */ /* THIRD PAGE */ /* THIRD PAGE */
+/* THIRD PAGE */ /* THIRD PAGE */ /* THIRD PAGE */ /* THIRD PAGE */
+/* THIRD PAGE */ /* THIRD PAGE */ /* THIRD PAGE */ /* THIRD PAGE */
+
+#thirdPageHTML {
+  background: rgb(41, 184, 253);
+  /* prettier-ignore */
+  background: linear-gradient(103.91deg, rgba(41,184,253,1) 0%, rgba(108,99,255,1) 80.2%);
+}
+
+#thirdPage {
+  display: flex;
+  flex-direction: column;
+}
+
+.contactHeader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+
+  height: 63px;
+  flex: 0 0 63px;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(11px);
+  -webkit-backdrop-filter: blur(11px);
+  /* border-radius: 10px; */
+}
+
+.logoContainer {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+
+  width: 100%;
+  max-width: 100vw;
+}
+
+.gitLogo {
+  max-width: 200px;
+  width: 50%;
+  height: auto;
+
+  margin-right: 2vw;
+
+  background: rgba(212, 212, 212, 0.05);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(1px);
+  -webkit-backdrop-filter: blur(1px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.twitLogo {
+  max-width: 200px;
+  width: 50%;
+  height: auto;
+
+  margin-left: 2vw;
+
+  background: rgba(212, 212, 212, 0.05);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(1px);
+  -webkit-backdrop-filter: blur(1px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.twitLogo:hover {
+  cursor: pointer;
+  transition: 1s;
+
+  background: rgba(212, 212, 212, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(6.5px);
+  -webkit-backdrop-filter: blur(6.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.gitLogo:hover {
+  cursor: pointer;
+  transition: 1s;
+
+  background: rgba(212, 212, 212, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(6.5px);
+  -webkit-backdrop-filter: blur(6.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+#formContainer {
+  /* box-sizing: border-box; */
+  max-width: 800px;
+  width: 100%;
+  height: auto;
+
+  /* margin: 0px 20px 0px 20px; */
+
+  display: flex;
+
+  align-self: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.formContainer {
+  /* width: 100%; */
+  height: 100%;
+
+  /* margin: 10px; */
+}
+
+#form {
+  width: 100%;
+
+  text-align: start;
+  border-style: solid;
+  font-family: Alata;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 0.9rem;
+
+  /* margin: 20px; */
+  padding: 5px;
+
+  background: rgba(255, 255, 255, 0.7);
+  border: 4px solid #6c63ff;
+  box-sizing: border-box;
+  border-radius: 5px;
+
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+form,
+.formP {
+  padding: 0;
+  margin: 5px 10px;
+}
+
+.name {
+  padding-left: 13px;
+  width: 100%;
+  height: 50px;
+
+  text-align: start;
+  border-style: solid;
+  font-family: Alata;
+  font-style: normal;
+  font-weight: normal;
+}
+
+.email {
+  padding-left: 13px;
+  width: 100%;
+  height: 50px;
+
+  text-align: start;
+  border-style: solid;
+  font-family: Alata;
+  font-style: normal;
+  font-weight: normal;
+}
+
+.message {
+  padding-left: 13px;
+  padding-top: 10px;
+  width: 100%;
+  height: 250px;
+
+  text-align: start;
+  border-style: solid;
+  font-family: Alata;
+  font-style: normal;
+  font-weight: normal;
+}
+
+#form:focus {
+  transition: 0.5s;
+
+  background: rgba(212, 212, 212, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(6.5px);
+  -webkit-backdrop-filter: blur(6.5px);
+  border-radius: 10px;
+  border-color: #ffffff;
+}
+
+.message:focus {
+  transition: 1s;
+}
+
+.button {
+  width: 250px;
+  height: 50px;
+  text-align: center;
+  border-style: solid;
+  font-family: Alata;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.5rem;
+  border-radius: 8px;
+  letter-spacing: 0.3em;
+  color: #ffffff;
+  background: #6c63ff;
+  border-color: #ffffff;
+}
+
+.button:hover {
+  background: rgba(212, 212, 212, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(6.5px);
+  -webkit-backdrop-filter: blur(6.5px);
+  border-radius: 10px;
+  border-color: #ffffff;
+}
+
+*:focus::placeholder {
+  color: transparent;
+}
+
+
+@media only screen and (max-width: 900px) {
+  .gitLogo {
+    max-width: 100px;
+    width: 50%;
+    height: auto;
+
+    margin-right: 1vw;
+  }
+
+  .twitLogo {
+    max-width: 100px;
+    width: 50%;
+    height: auto;
+
+    margin-left: 1vw;
+  }
+
+  .button {
+    width: 150px;
+    height: 50px;
+  }
+
+  
 }
 
 /* MOBILE SUPPORT */ /* MOBILE SUPPORT */ /* MOBILE SUPPORT */
