@@ -12,6 +12,26 @@ body {
   max-height: 100vh;
 }
 
+/* width */
+*::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+*::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+*::-webkit-scrollbar-thumb {
+  background: #009abc;
+}
+
+/* Handle on hover */
+*::-webkit-scrollbar-thumb:hover {
+  background: #00677e;
+}
+
 #firstPage {
   background-image: url(/Component\1\–\1svg);
   background-repeat: no-repeat;
