@@ -826,9 +826,7 @@ form,
     width: 530px;
     height: 100%;
     width: 100%;
-    /* padding-right: 10px;
-     padding-left: 10px;  
-     padding-bottom: 10px;     */
+
     flex: 1;
   }
 
@@ -843,12 +841,12 @@ form,
     height: auto;
     display: flex;
     margin-left: 0px;
-    /* margin-bottom: 20px; */
+  
     z-index: 2;
   }
 
   .upperTextContainer {
-    /* font-size: 3.2rem;  */
+ 
     font-size: clamp(31px, 10vw, 60px);
 
     padding: 0;
@@ -860,8 +858,7 @@ form,
     font-style: normal;
     font-weight: normal;
     text-align: center;
-    /* font-size: 1.75em; */
-    /* margin-bottom: 100px; */
+ 
     font-size: clamp(25px, 1vw, 40px);
 
     color: #000000;
