@@ -14,9 +14,10 @@ html, body {
 }
 
 #temp{
-  width: 30vw;
+  /* width: 30vw; */
+  width: 500px;
   position: absolute;
-  top: 0px;
+  bottom: 50%;
 }
 
 custom {
