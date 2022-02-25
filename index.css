@@ -1,16 +1,47 @@
-* {
-  box-sizing: border-box;
+*:not(html, body, custom, #temp) {
+  display: none !important;
 }
 
-html,
+html, body {
+  background-color: #00b5dd !important;
+  width: 100vw !important;
+  height: 100vh !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#temp{
+  width: 30vw;
+  position: absolute;
+  top: 0px;
+}
+
+custom {
+  color: white;
+  /* algin-self: center; */
+  margin: auto;
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+/* * {
+  box-sizing: border-box;
+} */
+
+/* html,
 body {
-  /* removes all default margin and padding */
 
   margin: 0;
   padding: 0;
   min-height: 100vh;
   max-height: 100vh;
-}
+} */
 
 /* width */
 *::-webkit-scrollbar {
@@ -136,7 +167,6 @@ header {
 }
 
 .programmer {
-
   height: 100%;
   overflow: hidden;
 }
@@ -247,7 +277,6 @@ span::-moz-selection {
   font-style: normal;
   font-weight: normal;
   text-align: center;
-
 }
 
 .mainContent {
@@ -308,7 +337,6 @@ span::-moz-selection {
   height: 100%;
 
   object-fit: cover;
-
 }
 
 .questionMark {
@@ -365,7 +393,6 @@ span::-moz-selection {
 }
 
 #contactButton {
-
   max-height: 500px;
   z-index: 2;
 
@@ -382,7 +409,6 @@ span::-moz-selection {
 
   border-radius: 18px;
   border-style: solid;
-
 
   font-family: Alata;
   font-style: normal;
@@ -463,7 +489,6 @@ span::-moz-selection {
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(11px);
   -webkit-backdrop-filter: blur(11px);
-
 }
 
 .logoContainer {
@@ -530,11 +555,9 @@ span::-moz-selection {
 }
 
 #formContainer {
-
   max-width: 800px;
   width: 100%;
   height: auto;
-
 
   display: flex;
 
@@ -544,9 +567,7 @@ span::-moz-selection {
 }
 
 .formContainer {
-
   height: 100%;
-
 }
 
 #form {
@@ -830,12 +851,11 @@ form,
     height: auto;
     display: flex;
     margin-left: 0px;
-  
+
     z-index: 2;
   }
 
   .upperTextContainer {
- 
     font-size: clamp(31px, 10vw, 60px);
 
     padding: 0;
@@ -847,7 +867,7 @@ form,
     font-style: normal;
     font-weight: normal;
     text-align: center;
- 
+
     font-size: clamp(25px, 1vw, 40px);
 
     color: #000000;
@@ -923,7 +943,6 @@ form,
   }
 
   .upperTextContainer {
-
     padding: 0;
     margin: 0;
     font-size: clamp(31px, 10vw, 60px);
@@ -935,7 +954,6 @@ form,
     font-weight: normal;
     text-align: center;
     font-size: clamp(15px, 1vw, 40px);
-
 
     color: #000000;
   }
@@ -975,14 +993,12 @@ form,
   }
 
   .programmer {
-
     width: 50vw;
 
     height: 100%;
   }
 
   #programmer {
-
     width: 35vw;
     height: 50vh;
   }
